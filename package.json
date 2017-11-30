@@ -1,0 +1,16 @@
+{
+  "name": "grumpy-cats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "random.js",
+  "scripts": {
+    "start": "concurrently \"npm run api\" \"npm run client\"",
+    "api": "cd api && sam local start-api -p 3001",
+    "client": "cd client && npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
