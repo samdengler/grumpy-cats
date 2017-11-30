@@ -33,12 +33,22 @@ class App extends Component {
         <Grid>
           <Row className="show-grid">
             <Col md={12}>
+              &nbsp;
+            </Col>
+          </Row>
+          <Row className="show-grid">
+            <Col md={12}>
               <Button bsStyle="primary" onClick={this.refreshCatImage}>Refresh</Button>
             </Col>
           </Row>
           <Row className="show-grid">
+            <Col md={12}>
+              &nbsp;
+            </Col>
+          </Row>
+          <Row className="show-grid">
             <Col md={6} mdOffset={3}>
-              { catImage.description }
+              <img src={ catImage.image_url }/>
             </Col>
           </Row>
         </Grid>
