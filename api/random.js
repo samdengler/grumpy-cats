@@ -30,8 +30,11 @@ function random_image(callback) {
 }
 
 function image_body(image_url) {
+  const resize_percentage = '100%';
   return {
-    image_url: image_url
+    image_url: image_url,
+    height: resize_percentage,
+    width: resize_percentage
   };
 }
 

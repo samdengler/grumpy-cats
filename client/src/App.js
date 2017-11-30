@@ -48,7 +48,10 @@ class App extends Component {
           </Row>
           <Row className="show-grid">
             <Col md={6} mdOffset={3}>
-              <img src={ catImage.image_url }/>
+              <img src={ catImage.image_url }
+                width={ catImage.width }
+                height={ catImage.height }
+              />
             </Col>
           </Row>
         </Grid>
